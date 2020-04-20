@@ -1,0 +1,20 @@
+version: '3'
+services:
+  db:
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: "1q2w3e"
+      MYSQL_USER: "yuanjinzhong"
+      MYSQL_PASSWORD: "1q2w3e"
+    command:
+         --character-set-server=utf8mb4
+         --collation-server=utf8mb4_unicode_ci
+         --max_connections=3000
+    image: "docker.io/mysql:latest"
+    restart: always
+    container_name: "mysql8.0"
+    volumes:
+      - "./data:/var/lib/mysql"
+      - "./conf/my.cnf:/etc/my.cnf"
+    ports:
+      - "23306:3306"
