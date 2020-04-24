@@ -4,7 +4,7 @@ services:
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: "1q2w3e"
-      MYSQL_USER: "yuanjinzhongt"
+      MYSQL_USER: "yuanjinzhong"
       MYSQL_PASSWORD: "1q2w3e"
     command:
          --character-set-server=utf8mb4
