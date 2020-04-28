@@ -11,6 +11,8 @@ MinIO 是一个基于Apache License v2.0开源协议的对象存储服务
 ## nacos
 github地址:https://github.com/nacos-group/nacos-docker
 
+nacos集群访问地址为: ip:集群中的任一端口/nacos  具体的端口配置查看文件夹内部的docker-compose文件
+
 # todolist
 * 添加redis5集群的compse
 * 添加elasticsearch集群compose
