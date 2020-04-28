@@ -8,6 +8,9 @@ MinIO 是一个基于Apache License v2.0开源协议的对象存储服务
 
 文档地址:https://docs.minio.io/cn/deploy-minio-on-docker-compose.html
 
+## nacos
+github地址:https://github.com/nacos-group/nacos-docker
+
 # todolist
 * 添加redis5集群的compse
 * 添加elasticsearch集群compose
