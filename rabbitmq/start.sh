@@ -11,7 +11,7 @@ docker images |grep rabbitmq |awk '{ imageName=$1":"$2; print imageName}' | xarg
 # 打印出启动的容器id
 docker  ps |grep rabbitmq |awk '{containerId=$1;print containerId}' |xargs echo  容器id:
 
-# docker run -d -it -p:5672 -p 15672:15672 --name rabbitLearn --hostname rabbitCluster01 ${imageName};
+# docker run -d -it -p 5672:5672  -p 15672:15672 --name rabbitLearn --hostname rabbitCluster01 ${imageName};
 
 
 # 进入容器内部
