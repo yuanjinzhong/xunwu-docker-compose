@@ -1,6 +1,6 @@
 version: '2.1'
 
-services:`
+services:
   zoo1:
     image: zookeeper:3.4.9
     hostname: zoo1
