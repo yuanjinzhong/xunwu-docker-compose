@@ -3,3 +3,5 @@ nacos-cluster/cluster-logs/
 nacos-cluster/mysql/
 */.DS_Store
 .DS_Store
+zk-single-kafka-single/
+zk-single-kafka-multiple/
