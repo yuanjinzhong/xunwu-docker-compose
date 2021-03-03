@@ -1,3 +1,5 @@
 */data
 nacos-cluster/cluster-logs/
 nacos-cluster/mysql/
+*/.DS_Store
+.DS_Store
