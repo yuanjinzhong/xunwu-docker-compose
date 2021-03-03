@@ -16,6 +16,9 @@ nacos集群访问地址为: ip:集群中的任一端口/nacos  具体的端口�
 ## rabbitmq
 rabbitmq不是docker-compose启动,采用的docker run启动。 同时rabbitmq 支持插件，安装方式见目录下的readme.md
 
+## kafka
+docker-compose -f  compose文件名  up   # 启动容器
+
 # todolist
 * 添加redis5集群的compse
 * 添加elasticsearch集群compose
