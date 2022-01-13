@@ -19,6 +19,8 @@ rabbitmq不是docker-compose启动,采用的docker run启动。 同时rabbitmq �
 ## kafka
 docker-compose -f  compose文件名  up   # 启动容器
 
+localhost:9000 访问kafka-manager
+
 # todolist
 * 添加redis5集群的compse
 * 添加elasticsearch集群compose
