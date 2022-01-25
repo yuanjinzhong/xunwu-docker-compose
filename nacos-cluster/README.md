@@ -14,6 +14,14 @@
 **日志出现 Nacos is strating的原因**
 
 >docker可使用的内存不够，设置内存。
+```txt
+# jvm 设置，不设置的话会占用大量内存
+JVM_XMS=300m
+JVM_XMX=300m
+JVM_XMN=180m
+JVM_MS=128m
+JVM_MMS=200m
+```
 
 **如何访问项目**
 >无所谓启动方式是hostname 还是ip，直接用127.0.0.1:8848/nacos 来访问就可以
