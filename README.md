@@ -9,6 +9,7 @@ MinIO 是一个基于Apache License v2.0开源协议的对象存储服务
 文档地址:https://docs.minio.io/cn/deploy-minio-on-docker-compose.html
 
 ## nacos
+> 下载桌面版docker启动nacos集群的时候若无法启动成功，则可以设置减小nacos的使用内存（桌面版docker可供nacos使用内存不足导致）
 github地址:https://github.com/nacos-group/nacos-docker
 
 nacos集群访问地址为: ip:集群中的任一端口/nacos  具体的端口配置查看文件夹内部的docker-compose文件
