@@ -23,7 +23,9 @@ docker-compose -f  compose文件名  up   # 启动容器
 
 localhost:9000 访问kafka-manager
 
+## redis cluster
+不需要使用docker-compose,直接使用官方提供的脚本(reids/redis-6.2.6/utils/create-cluster目录下)
+
 # todolist
-* 添加redis5集群的compse
 * 添加elasticsearch集群compose
 * 添加rocketmq集群compse
