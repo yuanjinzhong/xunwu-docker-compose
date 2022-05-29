@@ -1,5 +1,5 @@
 scrape_configs:
   - job_name: 'actuator-springboot'
-    metrics_path: '/actuator/prometheus'
+    metrics_path: '/xunwu-order/actuator/prometheus'
     static_configs:
       - targets: ['localhost:8082']
