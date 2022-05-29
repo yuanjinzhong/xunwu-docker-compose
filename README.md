@@ -26,6 +26,9 @@ localhost:9000 访问kafka-manager
 ## redis cluster
 不需要使用docker-compose,直接使用官方提供的脚本(reids/redis-6.2.6/utils/create-cluster目录下)
 
+## Prometheus+Grafana
+详见Prometheus+Grafana目录下的readme.md
+
 # todolist
 * 添加elasticsearch集群compose
 * 添加rocketmq集群compse
