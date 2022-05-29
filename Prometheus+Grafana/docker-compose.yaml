@@ -1,0 +1,27 @@
+version: '3'
+services:
+  grafana:
+    container_name: grafana
+    image: grafana/grafana
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafanaplugin:/var/lib/grafana/plugins/grafanaplugin
+    privileged: true
+    restart: always
+  prom:
+    image: quay.io/prometheus/prometheus:latest
+    volumes:
+      # 将prometheus.yml 文件放在与docker-compose 同级目录
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command: "--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus"
+    ports:
+     - "23333:9090" 
+    depends_on:
+     - exporter
+  exporter:
+    image: prom/node-exporter:latest
+    ports:
+     - "19100:9100"
