@@ -79,6 +79,7 @@ services:
     restart: always
     container_name: kafka-manager
     hostname: kafka-manager
+    command: -Dpidfile.path=/dev/null    
     ports:
       - "9000:9000"
     links:             
