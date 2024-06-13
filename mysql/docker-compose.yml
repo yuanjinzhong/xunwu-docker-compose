@@ -1,4 +1,4 @@
-version: '3'
+version: '3.3'
 services:
   mysql8:
     environment:
@@ -15,8 +15,9 @@ services:
     container_name: "mysql8.0"
     volumes:
       #mysql数据库挂载到host物理机目录
-      - "./data:/var/lib/mysql"
+      - "./data:/var/lib/mysql:rw"
       #容器的配置目录挂载到host物理机目录
       - "./conf/my.cnf:/etc/my.cnf"
+    user: mysql    
     ports:
       - "23306:3306" #host物理直接映射端口
