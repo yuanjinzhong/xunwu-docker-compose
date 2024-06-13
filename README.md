@@ -23,6 +23,8 @@ docker-compose -f  compose文件名  up   # 启动容器
 
 localhost:9000 访问kafka-manager
 
+关于启动、访问 kafka-manager的奇怪问题的解决方法,详见kafka文件下的readme.md
+
 ## redis cluster
 不需要使用docker-compose,直接使用官方提供的脚本(reids/redis-6.2.6/utils/create-cluster目录下)
 
