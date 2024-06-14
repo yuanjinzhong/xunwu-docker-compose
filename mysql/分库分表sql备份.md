@@ -8,6 +8,20 @@ create schema `ds-1` collate utf8mb4_unicode_ci;
 drop database if exists `study`;
 create schema study collate utf8mb4_unicode_ci;
 
+drop database if exists `state-machine`;
+create schema `state-machine` collate utf8mb4_unicode_ci;
+
+drop table if exists `state-machine`.t_order;
+create table `state-machine`.t_order
+(
+        id bigint not null
+                primary key,
+        serial_no varchar(50) charset utf8 null comment '订单编号',
+        status  varchar(50) charset utf8 null comment '订单状态',
+        create_by  varchar(50) charset utf8 null comment '创建人'
+)
+charset=latin1;
+
 
 drop table if exists `ds-0`.t_config;
 create table `ds-0`.t_config
