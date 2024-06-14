@@ -27,7 +27,7 @@ drop table if exists `ds-0`.t_config;
 create table `ds-0`.t_config
 (
         id bigint not null
-                primary key,
+                primary key auto_increment,
         remark varchar(50) charset utf8 null,
         create_time timestamp default CURRENT_TIMESTAMP not null,
         last_modify_time timestamp default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP
