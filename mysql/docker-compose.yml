@@ -10,14 +10,13 @@ services:
          --character-set-server=utf8mb4
          --collation-server=utf8mb4_unicode_ci
          --max_connections=3000
-    image: "docker.io/mysql:latest"
+    image: "docker.io/mysql:latest"  
     restart: always
     container_name: "mysql8.0"
     volumes:
       #mysql数据库挂载到host物理机目录
-      - "./data:/var/lib/mysql:rw"
+      - "./data:/var/lib/mysql"
       #容器的配置目录挂载到host物理机目录
       - "./conf/my.cnf:/etc/my.cnf"
-    user: mysql    
     ports:
       - "23306:3306" #host物理直接映射端口
