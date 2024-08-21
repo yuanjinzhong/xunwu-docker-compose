@@ -1,4 +1,4 @@
-version: '3'
+version: '3.3'
 services:
   mysql8:
     environment:
@@ -10,7 +10,7 @@ services:
          --character-set-server=utf8mb4
          --collation-server=utf8mb4_unicode_ci
          --max_connections=3000
-    image: "docker.io/mysql:latest"
+    image: "docker.io/mysql:latest"  
     restart: always
     container_name: "mysql8.0"
     volumes:
