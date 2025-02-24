@@ -18,5 +18,7 @@ services:
       - "./data:/var/lib/mysql"
       #容器的配置目录挂载到host物理机目录
       - "./conf/my.cnf:/etc/my.cnf"
+      # 挂载宿主机的时区文件
+      - "/etc/localtime:/etc/localtime:ro"  
     ports:
       - "23306:3306" #host物理直接映射端口
