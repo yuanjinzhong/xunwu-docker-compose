@@ -1,4 +1,16 @@
 services:
+  # Kowl (Kafka Web UI)
+  kowl:
+    image: quay.io/cloudhut/kowl:latest
+    container_name: kowl
+    ports:
+      - "8080:8080"  # 将 Kowl Web UI 暴露在本地 8080 端口
+    environment:
+      KAFKA_BROKERS: "kafka:9092"  # 使用服务名称访问 Kafka
+    depends_on:
+      - kafka   
+
+
   # Kafka (KRaft mode)
   kafka:
     image: bitnami/kafka:3.4.0
@@ -22,4 +34,4 @@ services:
 
 networks:
   default:
-    name: kafka-network
+    name: kowl-kafka-network
