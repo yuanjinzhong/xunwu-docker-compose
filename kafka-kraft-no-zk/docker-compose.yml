@@ -15,6 +15,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_LOG_DIRS: /tmp/kraft-combined-logs
       ALLOW_PLAINTEXT_LISTENER: yes  # 添加这一行
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true" # 自动创建topic   
    
     volumes:
       - ./kafka-logs:/tmp/kraft-combined-logs
