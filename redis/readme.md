@@ -6,3 +6,6 @@
 #### 步骤
 * 下载redis包
 * 到指定目录执行脚本（执行前查看同目录下的README文件）
+
+## docker方式启动
+同目录下的docker-compose.yml文件启动一个单机redis
