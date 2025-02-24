@@ -6,3 +6,4 @@ nacos-cluster/mysql/
 kafka/zk-single-kafka-single/
 kafka/zk-single-kafka-multiple/
 .vscode
+kafka-kraft-no-zk/kafka-logs/
